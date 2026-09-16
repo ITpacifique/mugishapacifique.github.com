@@ -66,6 +66,15 @@ body {
   font-family: var(--default-font);
 }
 
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -162,6 +171,22 @@ h6 {
   display: block;
   width: 120px;
   border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+}
+
+.profile-placeholder {
+  width: 148px;
+  height: 148px;
+  margin: 24px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid color-mix(in srgb, var(--default-color), transparent 85%);
+  border-radius: 50%;
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  font-family: var(--heading-font);
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .header .logo {
@@ -573,6 +598,32 @@ section,
 .hero .container {
   position: relative;
   z-index: 3;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 320px);
+  align-items: center;
+  gap: clamp(40px, 8vw, 120px);
+}
+
+.hero-content {
+  min-width: 0;
+}
+
+.hero-profile-space {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  border: 1px dashed color-mix(in srgb, var(--accent-color), transparent 35%);
+  border-radius: 24px;
+  background: color-mix(in srgb, var(--accent-color), transparent 94%);
+}
+
+.hero-profile-space .profile-placeholder {
+  width: 220px;
+  height: 220px;
+  margin: 0;
+  border-width: 10px;
+  font-size: 64px;
 }
 
 .hero h2 {
@@ -609,6 +660,26 @@ section,
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero .container {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .hero-profile-space {
+    min-height: 220px;
+  }
+
+  .hero-profile-space .profile-placeholder {
+    width: 160px;
+    height: 160px;
+    font-size: 48px;
+  }
+
   .hero h2 {
     font-size: 32px;
   }
