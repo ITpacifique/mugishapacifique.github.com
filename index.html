@@ -629,10 +629,22 @@
 <input id="profile-photo-input" type="file" accept="image/*" hidden>
 
 <script>
+    const savedPhotoKey = "profile-photo";
     const photoInput = document.getElementById("profile-photo-input");
     const photoPickers = document.querySelectorAll(".profile-photo-picker");
 
     const openPhotoPicker = () => photoInput.click();
+
+    const displayPhoto = (photoUrl) => {
+        photoPickers.forEach((picker) => {
+            const placeholder = picker.querySelector(".profile-placeholder");
+            const image = document.createElement("img");
+            image.src = photoUrl;
+            image.alt = "Selected profile photo";
+            placeholder.replaceChildren(image);
+            placeholder.classList.add("has-photo");
+        });
+    };
 
     photoPickers.forEach((picker) => {
         picker.addEventListener("click", openPhotoPicker);
@@ -644,16 +656,19 @@
         });
     });
 
+    const savedPhoto = localStorage.getItem(savedPhotoKey);
+    if (savedPhoto) displayPhoto(savedPhoto);
+
     photoInput.addEventListener("change", () => {
         const [photo] = photoInput.files;
         if (!photo) return;
 
-        const photoUrl = URL.createObjectURL(photo);
-        photoPickers.forEach((picker) => {
-            const placeholder = picker.querySelector(".profile-placeholder");
-            placeholder.innerHTML = `<img src="${photoUrl}" alt="Selected profile photo">`;
-            placeholder.classList.add("has-photo");
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            localStorage.setItem(savedPhotoKey, reader.result);
+            displayPhoto(reader.result);
         });
+        reader.readAsDataURL(photo);
     });
 </script>
 
