@@ -23,7 +23,7 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
 
-    <div class="profile-img" aria-label="Pacifique Mugisha profile picture">
+    <div class="profile-img profile-photo-picker" role="button" tabindex="0" aria-label="Upload your profile photo once">
         <div class="profile-placeholder">
             <span>PM</span>
         </div>
@@ -622,6 +622,50 @@
 <a href="#" class="scroll-top">
     <i class="bi bi-arrow-up"></i>
 </a>
+<input id="profile-photo-input" type="file" accept="image/*" hidden>
+
+<script>
+    const savedPhotoKey = "profile-photo-once";
+    const photoInput = document.getElementById("profile-photo-input");
+    const photoPicker = document.querySelector(".profile-photo-picker");
+    const savedPhoto = localStorage.getItem(savedPhotoKey);
+
+    const displayPhoto = (photoUrl) => {
+        const placeholder = photoPicker.querySelector(".profile-placeholder");
+        const image = document.createElement("img");
+        image.src = photoUrl;
+        image.alt = "Pacifique Mugisha profile photo";
+        placeholder.replaceChildren(image);
+        placeholder.classList.add("has-photo");
+        photoPicker.removeAttribute("role");
+        photoPicker.removeAttribute("tabindex");
+        photoPicker.removeAttribute("aria-label");
+    };
+
+    if (savedPhoto) {
+        displayPhoto(savedPhoto);
+    } else {
+        photoPicker.addEventListener("click", () => photoInput.click());
+        photoPicker.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                photoInput.click();
+            }
+        });
+
+        photoInput.addEventListener("change", () => {
+            const [photo] = photoInput.files;
+            if (!photo) return;
+
+            const reader = new FileReader();
+            reader.addEventListener("load", () => {
+                localStorage.setItem(savedPhotoKey, reader.result);
+                displayPhoto(reader.result);
+            });
+            reader.readAsDataURL(photo);
+        });
+    }
+</script>
 </body>
 
 </html>
