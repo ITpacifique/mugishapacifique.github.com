@@ -1,11 +1,11 @@
 # Pacifique Mugisha Portfolio
 
-This project is a personal portfolio website for Pacifique Mugisha, a Computer Science student. It presents an introduction, skills, current and planned projects, technology interests, and contact information in a responsive static website. The portfolio demonstrates continuous learning and development in web technologies.
+This project is a personal portfolio website for Pacifique Mugisha, a Bachelor of Technology in IT student at Saint Joseph Integrated Technology. It presents an introduction, skills, current and planned projects, technology interests, and contact information in a responsive static website. The portfolio demonstrates continuous learning and development in web technologies.
 
 ## Features
 
 - Home section with a personal introduction and portfolio navigation.
-- About Me section describing education, interests, and internship plans.
+- About Me section describing education at Saint Joseph Integrated Technology, interests, and internship plans.
 - Skills section highlighting HTML, CSS, JavaScript, and web development.
 - Projects section for capstone, web development, and personal projects.
 - Services and interests section covering web development, technology, and continuous learning.
@@ -54,6 +54,7 @@ git push origin main
 
 ## Technologies Used
 
+- Bachelor of Technology in IT at Saint Joseph Integrated Technology
 - HTML5
 - CSS3
 - JavaScript
