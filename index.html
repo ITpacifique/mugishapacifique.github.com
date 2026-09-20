@@ -23,17 +23,17 @@
 <!-- ================= HEADER ================= -->
 <header class="header">
 
-    <div class="profile-img profile-photo-picker" role="button" tabindex="0" aria-label="Upload your profile photo once">
+    <div class="profile-img profile-photo-picker" role="button" tabindex="0" aria-label="Choose a profile photo">
         <div class="profile-placeholder">
-            <span>PM</span>
+            <span>TG</span>
         </div>
     </div>
 
     <div class="logo">
-        <h1>Pacifique Mugisha</h1>
+        <h1>Teckla GIRAMATA</h1>
     </div>
 
-    <p class="profile-role">Bachelor of Technology in IT Student</p>
+    <p class="profile-role">Computer Science Student</p>
 
     <!-- Social Links -->
     <div class="social-links">
@@ -120,16 +120,15 @@
                 </div>
 
                 <h2>
-                    Hello, I'm <span>Pacifique Mugisha</span>
+                    Hello, I'm <span>Teckla GIRAMATA</span>
                 </h2>
 
                 <div class="hero-subtitle">
-                    Bachelor of Technology in IT <span>Student</span>
+                    Computer Science <span>Student</span>
                 </div>
 
                 <p class="hero-description">
-                    I am currently studying for a Bachelor of Technology in IT at
-                    Saint Joseph Integrated Technology.
+                    I am currently studying Computer Science at the University.
                     I am passionate about technology, web development, and
                     learning new skills. I enjoy creating personal projects
                     that help me improve my technical abilities.
@@ -156,7 +155,7 @@
 
                     <span>
                         <i class="bi bi-laptop"></i>
-                        IT
+                        Computer Science
                     </span>
 
                     <span>
@@ -166,6 +165,12 @@
 
                 </div>
 
+            </div>
+
+            <div class="hero-profile-space profile-photo-picker" role="button" tabindex="0" aria-label="Choose a profile photo">
+                <div class="profile-placeholder">
+                    <span>TG</span>
+                </div>
             </div>
 
         </div>
@@ -192,14 +197,13 @@
                 <h3>Who I Am</h3>
 
                 <p>
-                    My name is Pacifique Mugisha. I am studying for a Bachelor
-                    of Technology in IT at Saint Joseph Integrated Technology.
-                    I will be doing my internship
+                    My name is Teckla GIRAMATA. I am a Computer Science
+                    student at the University. I will be doing my internship
                     as part of my academic and professional development.
                 </p>
 
                 <p>
-                    I like IT because it gives me an
+                    I like Computer Science because it gives me an
                     opportunity to learn about technology and develop
                     solutions to different problems. Sometimes it can be
                     challenging, but I enjoy learning new things and
@@ -212,7 +216,7 @@
 
                     <div>
                         <strong>Education</strong>
-                        <span>Bachelor of Technology in IT</span>
+                        <span>Computer Science</span>
                     </div>
 
                     <div>
@@ -344,7 +348,7 @@
                             I am currently working on my capstone project.
                             The project gives me an opportunity to apply
                             the knowledge and skills I have gained during
-                            my IT studies.
+                            my Computer Science studies.
                         </p>
 
                         <a href="#">
@@ -516,7 +520,7 @@
 
                     <div>
                         <h3>Name</h3>
-                        <p>Pacifique Mugisha</p>
+                        <p>Teckla GIRAMATA</p>
                     </div>
 
                 </div>
@@ -529,8 +533,8 @@
                     <div>
                         <h3>Email</h3>
                         <p>
-                            <a href="mailto:pacifiquemugisha12@gmail.com">
-                                pacifiquemugisha12@gmail.com
+                            <a href="mailto:your@email.com">
+                                your@email.com
                             </a>
                         </p>
                     </div>
@@ -544,7 +548,7 @@
 
                     <div>
                         <h3>Location</h3>
-                        <p>Kigali, Rwanda</p>
+                        <p>Rwanda</p>
                     </div>
 
                 </div>
@@ -605,12 +609,12 @@
     <div class="container">
 
         <div class="copyright">
-            © <strong class="sitename">Pacifique Mugisha</strong>.
+            © <strong class="sitename">Teckla GIRAMATA</strong>.
             All Rights Reserved.
         </div>
 
         <div class="credits">
-            Bachelor of Technology in IT Student Portfolio
+            Computer Science Student Portfolio
         </div>
 
     </div>
@@ -625,47 +629,49 @@
 <input id="profile-photo-input" type="file" accept="image/*" hidden>
 
 <script>
-    const savedPhotoKey = "profile-photo-once";
+    const savedPhotoKey = "profile-photo";
     const photoInput = document.getElementById("profile-photo-input");
-    const photoPicker = document.querySelector(".profile-photo-picker");
-    const savedPhoto = localStorage.getItem(savedPhotoKey);
+    const photoPickers = document.querySelectorAll(".profile-photo-picker");
+
+    const openPhotoPicker = () => photoInput.click();
 
     const displayPhoto = (photoUrl) => {
-        const placeholder = photoPicker.querySelector(".profile-placeholder");
-        const image = document.createElement("img");
-        image.src = photoUrl;
-        image.alt = "Pacifique Mugisha profile photo";
-        placeholder.replaceChildren(image);
-        placeholder.classList.add("has-photo");
-        photoPicker.removeAttribute("role");
-        photoPicker.removeAttribute("tabindex");
-        photoPicker.removeAttribute("aria-label");
+        photoPickers.forEach((picker) => {
+            const placeholder = picker.querySelector(".profile-placeholder");
+            const image = document.createElement("img");
+            image.src = photoUrl;
+            image.alt = "Selected profile photo";
+            placeholder.replaceChildren(image);
+            placeholder.classList.add("has-photo");
+        });
     };
 
-    if (savedPhoto) {
-        displayPhoto(savedPhoto);
-    } else {
-        photoPicker.addEventListener("click", () => photoInput.click());
-        photoPicker.addEventListener("keydown", (event) => {
+    photoPickers.forEach((picker) => {
+        picker.addEventListener("click", openPhotoPicker);
+        picker.addEventListener("keydown", (event) => {
             if (event.key === "Enter" || event.key === " ") {
                 event.preventDefault();
-                photoInput.click();
+                openPhotoPicker();
             }
         });
+    });
 
-        photoInput.addEventListener("change", () => {
-            const [photo] = photoInput.files;
-            if (!photo) return;
+    const savedPhoto = localStorage.getItem(savedPhotoKey);
+    if (savedPhoto) displayPhoto(savedPhoto);
 
-            const reader = new FileReader();
-            reader.addEventListener("load", () => {
-                localStorage.setItem(savedPhotoKey, reader.result);
-                displayPhoto(reader.result);
-            });
-            reader.readAsDataURL(photo);
+    photoInput.addEventListener("change", () => {
+        const [photo] = photoInput.files;
+        if (!photo) return;
+
+        const reader = new FileReader();
+        reader.addEventListener("load", () => {
+            localStorage.setItem(savedPhotoKey, reader.result);
+            displayPhoto(reader.result);
         });
-    }
+        reader.readAsDataURL(photo);
+    });
 </script>
+
 </body>
 
 </html>
