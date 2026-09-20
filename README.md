@@ -1,6 +1,6 @@
 # Pacifique Mugisha Portfolio
 
-This project is a personal portfolio website for Pacifique Mugisha, a Computer Science student. It presents an introduction, skills, current and planned projects, technology interests, and contact information in a responsive static website.
+This project is a personal portfolio website for Pacifique Mugisha, a Computer Science student. It presents an introduction, skills, current and planned projects, technology interests, and contact information in a responsive static website. The portfolio demonstrates continuous learning and development in web technologies.
 
 ## Features
 
@@ -30,27 +30,27 @@ It can also be opened locally by opening `index.html` in a web browser.
 
 1. **Clone the repository:**
 
-	```bash
-	git clone https://github.com/ITpacifique/mugishapacifique.github.com.git
-	```
+```bash
+git clone https://github.com/ITpacifique/mugishapacifique.github.com.git
+```
 
 2. **Enter the project directory:**
 
-	```bash
-	cd mugishapacifique.github.com
-	```
+```bash
+cd mugishapacifique.github.com
+```
 
 3. **Open the website:**
 
-	Open `index.html` in a web browser, or serve the folder with any local static web server.
+Open `index.html` in a web browser, or serve the folder with any local static web server.
 
 4. **Publish changes:**
 
-	```bash
-	git add .
-	git commit -m "Update portfolio"
-	git push origin main
-	```
+```bash
+git add .
+git commit -m "Update portfolio"
+git push origin main
+```
 
 ## Technologies Used
 
@@ -62,7 +62,7 @@ It can also be opened locally by opening `index.html` in a web browser.
 
 ## License
 
-This educational portfolio project is released as free and unencumbered software under the terms in [License.txt](License.txt). The project is provided for educational and portfolio purposes without warranty.
+This project is created for educational and portfolio purposes. It is released as free and unencumbered software under the public-domain terms in [License.txt](License.txt). Anyone may copy, modify, use, or distribute the project. It is provided "as is", without warranty, and the author is not responsible for any claim or damage resulting from its use.
 
 ## Contributors
 
