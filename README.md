@@ -1,50 +1,56 @@
-# Pacifique Mugisha Portfolio
+# MUGISHA Pacifique Portfolio
 
-This project is a personal portfolio website for Pacifique Mugisha, a Bachelor of Technology in IT student at Saint Joseph Integrated Technology. It presents an introduction, skills, current and planned projects, technology interests, and contact information in a responsive static website. The portfolio demonstrates continuous learning and development in web technologies.
+A clean, responsive personal portfolio built as a static website to share my background, projects, and contact information.
 
-## Features
+## Live site
 
-- Home section with a personal introduction and portfolio navigation.
-- About Me section describing education at Saint Joseph Integrated Technology, interests, and internship plans.
-- Skills section highlighting HTML, CSS, JavaScript, and web development.
-- Projects section for capstone, web development, and personal projects.
-- Services and interests section covering web development, technology, and continuous learning.
-- Contact section with personal details and a contact form layout.
-- Profile photo picker that stores the selected image in the browser's local storage.
+This project is published with GitHub Pages and is available at:
 
-## How to Run This Project
+https://itpacifique.github.io/mugishapacifique.github.com/
 
-This is a static website. It can be viewed through GitHub Pages at:
+## Project overview
 
-**Project link:** [https://itpacifique.github.io/mugishapacifique.github.com/](https://itpacifique.github.io/mugishapacifique.github.com/)
+This portfolio includes:
 
-It can also be opened locally by opening `index.html` in a web browser.
+- A modern hero section with profile image and introduction
+- About Me information and study background
+- Project cards for capstone and personal work
+- Contact information and direct email link
+- Responsive layout for desktop and mobile devices
 
-### Prerequisites
+## Files included
 
-- A modern web browser such as Google Chrome, Microsoft Edge, Firefox, or Safari.
-- Git, if you want to clone and manage the project locally.
-- An optional local web server for development. No packages or build tools are required.
+- `index.html` — portfolio content and styling
+- `profile.jpeg` — profile image
+- `License.txt` — project license text
 
-### Installation
+## Run locally
 
-1. **Clone the repository:**
+You can open the project directly in a browser:
 
 ```bash
-git clone https://github.com/ITpacifique/mugishapacifique.github.com.git
+# from the project folder
+start index.html
 ```
 
-2. **Enter the project directory:**
+Or serve it locally with a simple static server:
 
 ```bash
-cd mugishapacifique.github.com
+cd "C:\Users\pacif\Documents\portfolio\mugishapacifique.github.com"
+py -m http.server 8000
 ```
 
-3. **Open the website:**
+Then open:
 
-Open `index.html` in a web browser, or serve the folder with any local static web server.
+```text
+http://localhost:8000
+```
 
-4. **Publish changes:**
+## GitHub Pages setup
+
+This project works as a static GitHub Pages site because it contains only HTML/CSS and image assets. For GitHub Pages, the repository should be published from the `main` branch in the repository settings.
+
+## Update and publish
 
 ```bash
 git add .
@@ -52,23 +58,6 @@ git commit -m "Update portfolio"
 git push origin main
 ```
 
-## Technologies Used
-
-- Bachelor of Technology in IT at Saint Joseph Integrated Technology
-- HTML5
-- CSS3
-- JavaScript
-- Bootstrap Icons
-- Google Fonts
-
 ## License
 
-This project is created for educational and portfolio purposes. It is released as free and unencumbered software under the public-domain terms in [License.txt](License.txt). Anyone may copy, modify, use, or distribute the project. It is provided "as is", without warranty, and the author is not responsible for any claim or damage resulting from its use.
-
-## Contributors
-
-- Pacifique Mugisha
-
-## Project Link
-
-[https://github.com/ITpacifique/mugishapacifique.github.com](https://github.com/ITpacifique/mugishapacifique.github.com)
+This project is released under the terms in [License.txt](License.txt).

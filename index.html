@@ -7,15 +7,18 @@
     <title>MUGISHA Pacifique | My Portfolio</title>
     <style>
         :root {
-            --bg: #f4f7fb;
-            --panel: #ffffff;
-            --panel-alt: #edf4ff;
-            --text: #1d2a39;
-            --muted: #5b6b7b;
+            --bg: #f3f7fb;
+            --panel: rgba(255, 255, 255, 0.9);
+            --panel-strong: #ffffff;
+            --panel-alt: #edf5ff;
+            --text: #14263b;
+            --muted: #52657a;
             --primary: #149ddd;
-            --primary-dark: #0f7fb3;
+            --primary-strong: #0d7ab4;
+            --primary-soft: rgba(20, 157, 221, 0.12);
             --line: rgba(20, 157, 221, 0.18);
-            --shadow: 0 20px 45px rgba(17, 24, 39, 0.08);
+            --shadow: 0 22px 60px rgba(15, 36, 60, 0.12);
+            --radius: 22px;
         }
 
         * { box-sizing: border-box; }
@@ -27,9 +30,11 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(180deg, #eef7ff 0%, #f6f8fb 100%);
+            background:
+                radial-gradient(circle at top left, rgba(20,157,221,0.10), transparent 25%),
+                linear-gradient(180deg, #eff7ff 0%, #f7f9fc 100%);
             color: var(--text);
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         img {
@@ -39,84 +44,209 @@
 
         a {
             text-decoration: none;
-            color: var(--primary-dark);
+            color: var(--primary-strong);
         }
 
         .portfolio-shell {
-            max-width: 1100px;
-            margin: 40px auto;
-            padding: 24px;
+            max-width: 1140px;
+            margin: 36px auto;
+            padding: 18px 20px 40px;
         }
 
         .intro {
-            display: grid;
-            grid-template-columns: 1.5fr 0.9fr;
-            align-items: center;
             background: var(--panel);
             border: 1px solid var(--line);
-            border-radius: 24px;
+            border-radius: 28px;
             box-shadow: var(--shadow);
             overflow: hidden;
+            backdrop-filter: blur(6px);
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            padding: 18px 28px;
+            border-bottom: 1px solid rgba(20, 157, 221, 0.12);
+            background: rgba(255,255,255,0.42);
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            color: var(--text);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--muted);
+            font-weight: 600;
+            padding: 8px 10px;
+            border-radius: 999px;
+            transition: all 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            background: var(--primary-soft);
+            color: var(--primary-strong);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 0.95fr;
+            align-items: center;
+            gap: 14px;
+            padding: 18px 24px 24px;
         }
 
         .title-block {
-            padding: 48px 40px;
+            padding: 30px 24px 24px;
         }
 
         .eyebrow {
-            color: var(--primary-dark);
-            text-transform: uppercase;
-            letter-spacing: 0.14em;
-            font-weight: 700;
+            display: inline-block;
+            background: var(--primary-soft);
+            color: var(--primary-strong);
+            border: 1px solid rgba(20,157,221,0.14);
+            border-radius: 999px;
+            padding: 9px 14px;
             font-size: 12px;
-            margin: 0 0 12px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
         }
 
         h1 {
-            font-size: clamp(2.2rem, 4vw, 4rem);
+            font-size: clamp(2.3rem, 5vw, 4.2rem);
+            line-height: 1.08;
             margin: 0;
-            line-height: 1.15;
             color: var(--text);
         }
 
         .subtitle {
-            margin-top: 10px;
+            margin-top: 14px;
             font-size: 1.1rem;
             color: var(--muted);
+            max-width: 640px;
+            font-weight: 500;
+        }
+
+        .cta-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-top: 22px;
+        }
+
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 22px;
+            border-radius: 999px;
+            font-weight: 700;
+            transition: 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .button.primary {
+            background: linear-gradient(135deg, var(--primary), var(--primary-strong));
+            color: #fff;
+            box-shadow: 0 12px 25px rgba(20,157,221,0.22);
+        }
+
+        .button.primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 14px 28px rgba(20,157,221,0.28);
+        }
+
+        .button.ghost {
+            border-color: rgba(20,157,221,0.24);
+            background: rgba(255,255,255,0.7);
+            color: var(--primary-strong);
+        }
+
+        .button.ghost:hover {
+            background: var(--primary-soft);
+        }
+
+        .highlights {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 0;
+            margin: 24px 0 0;
+        }
+
+        .highlights li {
+            background: var(--panel-alt);
+            border: 1px solid var(--line);
+            color: var(--text);
             font-weight: 600;
+            padding: 7px 12px;
+            border-radius: 999px;
+            font-size: 0.92rem;
         }
 
         .profile-card {
             position: relative;
-            min-height: 260px;
-            background: linear-gradient(135deg, var(--panel-alt), #dfeeff);
+            min-height: 300px;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 30px;
+            padding: 24px;
+            background: linear-gradient(135deg, #eaf7ff, #dfeeff);
+            border-radius: 26px;
+            border: 1px solid rgba(20,157,221,0.08);
+            margin: 20px;
+            overflow: hidden;
+        }
+
+        .badge {
+            position: absolute;
+            top: 18px;
+            left: 18px;
+            background: rgba(255,255,255,0.8);
+            color: var(--primary-strong);
+            border: 1px solid rgba(20,157,221,0.12);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
         }
 
         .profile-card img {
-            width: min(280px, 100%);
-            height: 280px;
+            width: min(290px, 100%);
+            height: 290px;
             object-fit: cover;
             border-radius: 50%;
-            border: 6px solid rgba(255,255,255,0.9);
-            box-shadow: 0 18px 35px rgba(17, 24, 39, 0.12);
+            border: 7px solid rgba(255,255,255,0.94);
+            box-shadow: 0 18px 40px rgba(17, 24, 39, 0.12);
         }
 
         .section {
-            margin-top: 32px;
+            margin-top: 28px;
             background: var(--panel);
             border: 1px solid var(--line);
-            border-radius: 22px;
+            border-radius: var(--radius);
             box-shadow: var(--shadow);
-            padding: 28px 30px;
+            padding: 28px 28px 26px;
         }
 
         .section-heading {
             margin: 0 0 18px;
-            font-size: clamp(1.5rem, 2vw, 2rem);
+            font-size: clamp(1.6rem, 2vw, 2.1rem);
             color: var(--text);
             position: relative;
             display: inline-block;
@@ -125,17 +255,17 @@
         .section-heading::after {
             content: "";
             display: block;
-            width: 60px;
+            width: 62px;
             height: 4px;
-            background: var(--primary);
-            border-radius: 99px;
+            background: linear-gradient(90deg, var(--primary), transparent);
+            border-radius: 999px;
             margin-top: 8px;
         }
 
         .about-grid {
             display: grid;
             grid-template-columns: 1.7fr 1fr;
-            gap: 30px;
+            gap: 28px;
             align-items: start;
         }
 
@@ -159,9 +289,9 @@
 
         .meta-item span {
             display: block;
-            font-size: 0.8rem;
+            font-size: 0.76rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.12em;
             color: var(--muted);
             margin-bottom: 8px;
         }
@@ -175,15 +305,21 @@
         .project-grid {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 22px;
+            gap: 20px;
         }
 
         .project-card {
-            background: linear-gradient(180deg, #ffffff, #f7fbff);
+            background: linear-gradient(180deg, #fff, #f6fbff);
             border: 1px solid var(--line);
             border-radius: 18px;
             padding: 22px 18px;
-            box-shadow: 0 10px 26px rgba(18, 55, 94, 0.05);
+            box-shadow: 0 12px 26px rgba(18, 55, 94, 0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 18px 28px rgba(18, 55, 94, 0.08);
         }
 
         .project-number {
@@ -192,13 +328,13 @@
             font-size: 0.72rem;
             letter-spacing: 0.12em;
             text-transform: uppercase;
-            color: var(--primary-dark);
-            font-weight: 700;
+            color: var(--primary-strong);
+            font-weight: 800;
         }
 
         .project-card h3 {
             margin: 0 0 10px;
-            font-size: 1.4rem;
+            font-size: 1.45rem;
         }
 
         .project-card p {
@@ -220,59 +356,49 @@
         }
 
         .project-link:hover {
-            background: var(--primary-dark);
+            background: var(--primary-strong);
         }
 
         .contact-box {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
             align-items: center;
+            justify-content: space-between;
+            gap: 18px;
+            flex-wrap: wrap;
         }
 
         .contact-details {
             display: flex;
             flex-wrap: wrap;
-            gap: 26px;
+            gap: 16px 28px;
             color: var(--muted);
+            font-weight: 600;
         }
 
         .contact-details a,
         .contact-details span {
             color: var(--muted);
-            font-weight: 600;
         }
 
-        .button {
-            display: inline-block;
-            background: var(--primary);
-            color: #fff;
-            padding: 12px 22px;
-            border-radius: 999px;
-            font-weight: 700;
-            transition: 0.2s ease;
-        }
-
-        .button:hover {
-            background: var(--primary-dark);
-            color: #fff;
-        }
-
-        @media (max-width: 800px) {
-            .intro,
+        @media (max-width: 860px) {
+            .hero-grid,
             .about-grid,
             .project-grid {
                 grid-template-columns: 1fr;
             }
 
+            .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
             .portfolio-shell {
-                margin: 20px auto;
+                margin: 18px auto;
                 padding: 12px;
             }
 
             .title-block {
-                padding: 28px 22px;
+                padding: 16px 8px 6px;
             }
 
             .meta-grid {
@@ -285,18 +411,45 @@
 <body>
     <main class="portfolio-shell">
         <header class="intro">
-            <div class="title-block">
-                <p class="eyebrow">My Portfolio</p>
-                <h1>MUGISHA Pacifique</h1>
-                <p class="subtitle">IT Student | Web Development Enthusiast</p>
-            </div>
+            <nav class="topbar" aria-label="Main navigation">
+                <div class="brand">MUGISHA Pacifique</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
 
-            <div class="profile-card">
-                <img src="profile.jpeg" alt="MUGISHA Pacifique">
+            <div class="hero-grid">
+                <div class="title-block">
+                    <span class="eyebrow">IT Student • Web Developer</span>
+                    <h1>Building thoughtful digital experiences.</h1>
+                    <p class="subtitle">
+                        I’m a student in Information Technology with a strong interest in web development,
+                        problem solving, and continuous learning. I enjoy creating simple, modern, and useful digital solutions.
+                    </p>
+
+                    <div class="cta-row">
+                        <a href="#projects" class="button primary">View Projects</a>
+                        <a href="mailto:pacifiquemugisha12@gmail.com" class="button ghost">Contact Me</a>
+                    </div>
+
+                    <ul class="highlights" aria-label="Skills and interests">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Web Design</li>
+                    </ul>
+                </div>
+
+                <div class="profile-card">
+                    <div class="badge">Open to learning</div>
+                    <img src="profile.jpeg" alt="MUGISHA Pacifique">
+                </div>
             </div>
         </header>
 
-        <section class="section about">
+        <section id="about" class="section about">
             <h2 class="section-heading">About Me</h2>
 
             <div class="about-grid">
@@ -333,7 +486,7 @@
             </div>
         </section>
 
-        <section class="section projects">
+        <section id="projects" class="section projects">
             <h2 class="section-heading">Projects</h2>
 
             <div class="project-grid">
@@ -369,7 +522,7 @@
             </div>
         </section>
 
-        <section class="section contact">
+        <section id="contact" class="section contact">
             <h2 class="section-heading">Contact</h2>
 
             <div class="contact-box">
@@ -378,7 +531,7 @@
                     <span>Location: Rwanda</span>
                 </div>
 
-                <a href="mailto:pacifiquemugisha12@gmail.com" class="button">Email Me</a>
+                <a href="mailto:pacifiquemugisha12@gmail.com" class="button primary">Email Me</a>
             </div>
         </section>
     </main>
