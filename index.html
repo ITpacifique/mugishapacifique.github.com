@@ -109,6 +109,9 @@
             color: var(--muted);
             font-weight: 600;
             padding: 8px 10px;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
             border-radius: 999px;
             transition: all 0.2s ease;
         }
@@ -418,6 +421,45 @@
 
             .meta-grid {
                 grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 540px) {
+            .topbar {
+                padding: 14px 18px;
+            }
+
+            .nav-links {
+                gap: 2px;
+            }
+
+            .nav-links a {
+                padding: 8px;
+            }
+
+            .section {
+                padding: 22px 18px;
+            }
+
+            .profile-card {
+                min-height: 248px;
+                margin: 12px;
+            }
+
+            .profile-card img {
+                width: min(220px, 100%);
+                height: 220px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                scroll-behavior: auto !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
             }
         }
     </style>
