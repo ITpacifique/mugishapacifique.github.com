@@ -61,3 +61,9 @@ git push origin main
 ## License
 
 This project is released under the terms in [License.txt](License.txt).
+
+## Collaborator
+
+| Full name | GitHub | Role |
+| --- | --- | --- |
+| NUMUGISHA Emelyne | [@numugishaemelyne](https://github.com/numugishaemelyne) | Collaborator |
