@@ -62,7 +62,7 @@ git push origin main
 
 This project is released under the terms in [License.txt](License.txt).
 
-## Collaborator
+## Collaborators
 
 | Full name | GitHub | Repository | Role |
 | --- | --- | --- | --- |
