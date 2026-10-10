@@ -67,3 +67,4 @@ This project is released under the terms in [License.txt](License.txt).
 | Full name | GitHub | Role |
 | --- | --- | --- |
 | NUMUGISHA Emelyne | [@numugishaemelyne](https://github.com/numugishaemelyne) | Collaborator |
+| MUGISHA Pacifique | [@ITpacifique](https://github.com/ITpacifique) | Portfolio owner |
