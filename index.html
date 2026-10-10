@@ -47,6 +47,27 @@
             color: var(--primary-strong);
         }
 
+        a:focus-visible {
+            outline: 3px solid var(--primary-strong);
+            outline-offset: 4px;
+        }
+
+        .skip-link {
+            position: fixed;
+            top: 12px;
+            left: 12px;
+            z-index: 10;
+            padding: 10px 14px;
+            border-radius: 6px;
+            background: var(--text);
+            color: #fff;
+            transform: translateY(-160%);
+        }
+
+        .skip-link:focus {
+            transform: translateY(0);
+        }
+
         .portfolio-shell {
             max-width: 1140px;
             margin: 36px auto;
@@ -403,6 +424,7 @@
 </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <div class="portfolio-shell">
         <header class="intro">
             <div class="topbar">
@@ -443,6 +465,7 @@
             </div>
         </header>
 
+        <main id="main-content">
         <section id="about" class="section about">
             <h2 class="section-heading">About Me</h2>
             <div class="about-grid">
@@ -522,6 +545,7 @@
                 <a href="mailto:pacifiquemugisha12@gmail.com" class="button primary">Email Me</a>
             </div>
         </section>
+        </main>
     </div>
 </body>
 
