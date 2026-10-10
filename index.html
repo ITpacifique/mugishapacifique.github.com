@@ -342,21 +342,15 @@
             margin: 0 0 18px;
         }
 
-        .project-link {
+        .project-status {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: var(--primary);
-            color: #fff;
-            font-weight: bold;
-            transition: 0.2s ease;
-        }
-
-        .project-link:hover {
-            background: var(--primary-strong);
+            padding: 7px 11px;
+            border-radius: 999px;
+            background: var(--primary-soft);
+            color: var(--primary-strong);
+            font-size: 0.84rem;
+            font-weight: 700;
         }
 
         .contact-box {
@@ -493,7 +487,7 @@
                         I am currently working on my capstone project, which allows me to
                         apply the knowledge and practical skills I have gained during my studies.
                     </p>
-                    <a href="#" class="project-link" aria-label="Open capstone project">→</a>
+                    <span class="project-status">In progress</span>
                 </article>
 
                 <article class="project-card">
@@ -503,7 +497,7 @@
                         Personal web projects created to practice HTML, CSS, JavaScript, and
                         modern interface design.
                     </p>
-                    <a href="#" class="project-link" aria-label="Open web development project">→</a>
+                    <span class="project-status">Details not published yet</span>
                 </article>
 
                 <article class="project-card">
@@ -513,7 +507,7 @@
                         Small ideas and experiments that help me build problem-solving skills and
                         improve my understanding of technology.
                     </p>
-                    <a href="#" class="project-link" aria-label="Open personal project">→</a>
+                    <span class="project-status">Details not published yet</span>
                 </article>
             </div>
         </section>
