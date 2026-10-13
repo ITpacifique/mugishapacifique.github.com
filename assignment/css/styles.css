@@ -11003,3 +11003,44 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+.profile-photo-frame {
+  position: relative;
+  width: min(100%, 22rem);
+  aspect-ratio: 4 / 5;
+  margin-inline: auto;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 14px 14px 0 rgba(255, 255, 255, 0.18);
+}
+
+.profile-photo-placeholder,
+.profile-photo {
+  position: absolute;
+  inset: 0.75rem;
+  width: calc(100% - 1.5rem);
+  height: calc(100% - 1.5rem);
+}
+
+.profile-photo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  color: #6c757d;
+  background: #f8f9fa;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.profile-photo-placeholder .bi {
+  color: #f4623a;
+  font-size: 4rem;
+}
+
+.profile-photo {
+  object-fit: cover;
+  object-position: center;
+}
