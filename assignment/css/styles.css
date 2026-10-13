@@ -11004,98 +11004,17 @@ header.masthead h1, header.masthead .h1 {
   opacity: 1;
 }
 
-.profile-photo-frame {
-  position: relative;
-  width: min(100%, 22rem);
-  aspect-ratio: 4 / 5;
-  margin-inline: auto;
-  border: 1px solid rgba(255, 255, 255, 0.75);
-  background: rgba(255, 255, 255, 0.12);
-  box-shadow: 14px 14px 0 rgba(255, 255, 255, 0.18);
-}
-
-header.masthead .profile-photo-frame {
+.profile-photo-static {
+  display: block;
   width: min(100%, 12rem);
-  box-shadow: 10px 10px 0 rgba(255, 255, 255, 0.18);
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  object-position: center;
+  margin-inline: auto;
 }
 
 @media (min-width: 992px) {
-  header.masthead .profile-photo-frame {
+  .profile-photo-static {
     width: min(100%, 18rem);
   }
-}
-
-.profile-photo-placeholder,
-.profile-photo {
-  position: absolute;
-  inset: 0.75rem;
-  width: calc(100% - 1.5rem);
-  height: calc(100% - 1.5rem);
-}
-
-.profile-photo-placeholder[hidden],
-.profile-photo[hidden] {
-  display: none !important;
-}
-
-.profile-photo-placeholder {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  color: #6c757d;
-  background: #f8f9fa;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.profile-photo-placeholder .bi {
-  color: #f4623a;
-  font-size: 4rem;
-}
-
-.profile-photo {
-  object-fit: cover;
-  object-position: center;
-}
-
-.profile-photo-controls {
-  position: absolute;
-  right: 1.25rem;
-  bottom: 1.25rem;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.profile-photo-action {
-  display: grid;
-  width: 2.75rem;
-  height: 2.75rem;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.85);
-  border-radius: 50%;
-  color: #343a40;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 4px 14px rgba(33, 37, 41, 0.24);
-  font-size: 1.05rem;
-  transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
-}
-
-.profile-photo-action:hover {
-  color: #fff;
-  background: #f4623a;
-  transform: translateY(-2px);
-}
-
-.profile-photo-action:focus-visible {
-  outline: 3px solid #212529;
-  outline-offset: 3px;
-}
-
-.profile-photo-action[hidden] {
-  display: none !important;
 }
