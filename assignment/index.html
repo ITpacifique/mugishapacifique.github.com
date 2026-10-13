@@ -38,14 +38,28 @@
         <!-- Masthead-->
         <header class="masthead" id="home">
             <div class="container px-4 px-lg-5 h-100">
-                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
-                    <div class="col-lg-8 align-self-end">
+                <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center">
+                    <div class="col-lg-7 order-2 order-lg-1 text-center text-lg-start">
                         <h1 class="text-white font-weight-bold">A Portfolio of Selected Work</h1>
-                        <hr class="divider" />
-                    </div>
-                    <div class="col-lg-8 align-self-baseline">
+                        <hr class="divider mx-auto mx-lg-0" />
                         <p class="text-white-75 mb-5">Explore my projects, areas of expertise, and professional interests.</p>
                         <a class="btn btn-primary btn-xl" href="#portfolio">View Projects</a>
+                    </div>
+                    <div class="col-lg-5 order-1 order-lg-2 mb-4 mb-lg-0">
+                        <div class="profile-photo-frame">
+                            <div class="profile-photo-placeholder" aria-hidden="true">
+                                <i class="bi bi-person-fill"></i>
+                                <span>Your Photo</span>
+                            </div>
+                            <img class="profile-photo" src="assets/img/profile.jpg" alt="Portrait of the portfolio owner" />
+                            <div class="profile-photo-controls">
+                            <button class="profile-photo-action" id="chooseProfilePhoto" type="button" aria-label="Choose a profile photo" title="Choose a profile photo" aria-controls="profilePhotoInput">
+                                <i class="bi bi-camera-fill" aria-hidden="true"></i>
+                            </button>
+                            <input class="visually-hidden" id="profilePhotoInput" type="file" accept="image/*" tabindex="-1" aria-hidden="true" />
+                            </div>
+                        </div>
+                        <p class="visually-hidden" id="profilePhotoStatus" aria-live="polite">Preview on this device only. To publish, add your image as assets/img/profile.jpg.</p>
                     </div>
                 </div>
             </div>
@@ -53,17 +67,8 @@
         <!-- About-->
         <section class="page-section bg-primary" id="about">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 align-items-center justify-content-center">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <div class="profile-photo-frame">
-                            <div class="profile-photo-placeholder" aria-hidden="true">
-                                <i class="bi bi-person-fill"></i>
-                                <span>Your Photo</span>
-                            </div>
-                            <img class="profile-photo" src="assets/img/profile.jpg" alt="Portrait of the portfolio owner" onerror="this.hidden = true" />
-                        </div>
-                    </div>
-                    <div class="col-lg-7 text-center text-lg-start">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 text-center">
                         <h2 class="text-white mt-0">About Me</h2>
                         <hr class="divider divider-light" />
                         <p class="text-white-75 mb-4">This portfolio brings together selected work and highlights my approach to creating thoughtful digital experiences.</p>
@@ -256,7 +261,7 @@
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted">Copyright &copy; <script>document.write(new Date().getFullYear());</script> - Portfolio</div></div>
 
-            <div class="container px-4 px-lg-5 pt-2"><div class="small text-center text-muted">Distributed By <a href="https://themewagon.com/">Themewagon</a>
+            <div class="container px-4 px-lg-5 pt-2"><div class="small text-center text-muted">Distributed By <a href="https://themewagon.com/">Pacifique</a>
             </div></div>
         </footer>
         <!-- Bootstrap core JS-->
