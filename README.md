@@ -62,9 +62,8 @@ git push origin main
 
 This project is released under the terms in [License.txt](License.txt).
 
-## Collaborators
+## Collaborator
 
-| Full name | GitHub | Repository | Role |
-| --- | --- | --- | --- |
-| NUMUGISHA Emelyne | [@numugishaemelyne](https://github.com/numugishaemelyne) | [emelynemugisha](https://github.com/numugishaemelyne/emelynemugisha) | Collaborator |
-| MUGISHA Pacifique | [@ITpacifique](https://github.com/ITpacifique) | [mugishapacifique.github.com](https://github.com/ITpacifique/mugishapacifique.github.com) | Portfolio owner |
+- **Full name:** NUMUGISHA Emelyne
+- **GitHub username:** [@numugishaemelyne](https://github.com/numugishaemelyne)
+- **Role:** Collaborator
