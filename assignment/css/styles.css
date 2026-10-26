@@ -11018,3 +11018,42 @@ header.masthead h1, header.masthead .h1 {
     width: min(100%, 18rem);
   }
 }
+
+.skills-list {
+  border-top: 1px solid rgba(33, 37, 41, 0.12);
+}
+
+.skill-item {
+  display: flex;
+  min-height: 5rem;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(33, 37, 41, 0.12);
+  color: #343a40;
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 700;
+}
+
+.skill-item .bi {
+  flex: 0 0 1.5rem;
+  color: #f4623a;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .skills-list > div:nth-child(odd) .skill-item {
+    border-right: 1px solid rgba(33, 37, 41, 0.12);
+  }
+}
+
+@media (min-width: 992px) {
+  .skills-list > div:nth-child(odd) .skill-item {
+    border-right: 0;
+  }
+
+  .skills-list > div:not(:nth-child(3n)) .skill-item {
+    border-right: 1px solid rgba(33, 37, 41, 0.12);
+  }
+}
