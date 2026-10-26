@@ -1,0 +1,151 @@
+2026-10-26 20:27:41,570 - INFO - RUN_HEADER date_time=2026-10-26T18:27:41.548984+00:00 website=https://itpacifique.github.io/mugishapacifique.github.com/index.html browser=chrome 155.0.8059.85 operating_system=Windows-11-10.0.26200-SP0
+2026-10-26 20:27:41,576 - INFO - TEST_START id=TEST-001 test=Home section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#home expected=Home section is present and visible
+2026-10-26 20:27:48,767 - ERROR - TEST_RESULT id=TEST-001 test=Home section expected=Home section is present and visible actual=section not found status=FAIL time_taken=7.191s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#home
+2026-10-26 20:27:48,790 - INFO - TEST_START id=TEST-002 test=About section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#about expected=About section is present and visible
+2026-10-26 20:27:48,978 - INFO - TEST_RESULT id=TEST-002 test=About section expected=About section is present and visible actual=section id=about is visible status=PASS time_taken=0.189s
+2026-10-26 20:27:48,978 - INFO - TEST_START id=TEST-003 test=Expertise section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#expertise expected=Expertise section is present and visible
+2026-10-26 20:27:54,151 - ERROR - TEST_RESULT id=TEST-003 test=Expertise section expected=Expertise section is present and visible actual=section not found status=FAIL time_taken=5.165s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#expertise
+2026-10-26 20:27:54,151 - INFO - TEST_START id=TEST-004 test=Skills section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#skills expected=Skills section is present and visible
+2026-10-26 20:27:59,320 - ERROR - TEST_RESULT id=TEST-004 test=Skills section expected=Skills section is present and visible actual=section not found status=FAIL time_taken=5.160s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#skills
+2026-10-26 20:27:59,320 - INFO - TEST_START id=TEST-005 test=Portfolio section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#portfolio expected=Portfolio section is present and visible
+2026-10-26 20:28:04,501 - ERROR - TEST_RESULT id=TEST-005 test=Portfolio section expected=Portfolio section is present and visible actual=section not found status=FAIL time_taken=5.173s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#portfolio
+2026-10-26 20:28:04,501 - INFO - TEST_START id=TEST-006 test=Contact section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#contact expected=Contact section is present and visible
+2026-10-26 20:28:04,548 - INFO - TEST_RESULT id=TEST-006 test=Contact section expected=Contact section is present and visible actual=section id=contact is visible status=PASS time_taken=0.048s
+2026-10-26 20:28:04,550 - INFO - TEST_START id=TEST-007 test=Collaboration section url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#collaboration expected=Collaboration section is present and visible
+2026-10-26 20:28:09,726 - ERROR - TEST_RESULT id=TEST-007 test=Collaboration section expected=Collaboration section is present and visible actual=section not found status=FAIL time_taken=5.174s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#collaboration
+2026-10-26 20:28:09,734 - INFO - TEST_START id=TEST-008 test=Missing-section failure handling url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#missing-section expected=Missing section should be reported as a failure
+2026-10-26 20:28:14,910 - ERROR - TEST_RESULT id=TEST-008 test=Missing-section failure handling expected=Missing section should be reported as a failure actual=section not found status=FAIL time_taken=5.168s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/index.html#missing-section
+2026-10-26 20:28:17,268 - INFO - BROWSER_CLOSED browser_session=complete
+2026-10-26 20:28:17,268 - INFO - RUN_SUMMARY total_tests=8 passed=2 failed=6 total_duration=36.209s

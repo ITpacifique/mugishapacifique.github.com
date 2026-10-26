@@ -1,0 +1,195 @@
+2026-10-26 20:25:53,803 - INFO - RUN_HEADER date_time=2026-10-26T18:25:53.765225+00:00 website=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html browser=chrome 155.0.8059.85 operating_system=Windows-11-10.0.26200-SP0
+2026-10-26 20:25:53,803 - INFO - TEST_START id=TEST-001 test=Home section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#home expected=Home section is present and visible
+2026-10-26 20:26:00,317 - ERROR - TEST_RESULT id=TEST-001 test=Home section expected=Home section is present and visible actual=section not found status=FAIL time_taken=6.509s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#home
+2026-10-26 20:26:00,317 - INFO - TEST_START id=TEST-002 test=About section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#about expected=About section is present and visible
+2026-10-26 20:26:05,496 - ERROR - TEST_RESULT id=TEST-002 test=About section expected=About section is present and visible actual=section not found status=FAIL time_taken=5.165s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#about
+2026-10-26 20:26:05,496 - INFO - TEST_START id=TEST-003 test=Expertise section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#expertise expected=Expertise section is present and visible
+2026-10-26 20:26:10,676 - ERROR - TEST_RESULT id=TEST-003 test=Expertise section expected=Expertise section is present and visible actual=section not found status=FAIL time_taken=5.171s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#expertise
+2026-10-26 20:26:10,676 - INFO - TEST_START id=TEST-004 test=Skills section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#skills expected=Skills section is present and visible
+2026-10-26 20:26:15,846 - ERROR - TEST_RESULT id=TEST-004 test=Skills section expected=Skills section is present and visible actual=section not found status=FAIL time_taken=5.164s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#skills
+2026-10-26 20:26:15,846 - INFO - TEST_START id=TEST-005 test=Portfolio section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#portfolio expected=Portfolio section is present and visible
+2026-10-26 20:26:21,061 - ERROR - TEST_RESULT id=TEST-005 test=Portfolio section expected=Portfolio section is present and visible actual=section not found status=FAIL time_taken=5.207s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#portfolio
+2026-10-26 20:26:21,061 - INFO - TEST_START id=TEST-006 test=Contact section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#contact expected=Contact section is present and visible
+2026-10-26 20:26:26,252 - ERROR - TEST_RESULT id=TEST-006 test=Contact section expected=Contact section is present and visible actual=section not found status=FAIL time_taken=5.186s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#contact
+2026-10-26 20:26:26,252 - INFO - TEST_START id=TEST-007 test=Collaboration section url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#collaboration expected=Collaboration section is present and visible
+2026-10-26 20:26:31,449 - ERROR - TEST_RESULT id=TEST-007 test=Collaboration section expected=Collaboration section is present and visible actual=section not found status=FAIL time_taken=5.188s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#collaboration
+2026-10-26 20:26:31,449 - INFO - TEST_START id=TEST-008 test=Missing-section failure handling url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#missing-section expected=Missing section should be reported as a failure
+2026-10-26 20:26:36,633 - ERROR - TEST_RESULT id=TEST-008 test=Missing-section failure handling expected=Missing section should be reported as a failure actual=section not found status=FAIL time_taken=5.175s error=Message: 
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	(No symbol) [0x7ff7dc7ae745]
+	(No symbol) [0x7ff7dc363d00]
+	(No symbol) [0x7ff7dc193f3d]
+	(No symbol) [0x7ff7dc1ef6ed]
+	(No symbol) [0x7ff7dc1ef9bc]
+	(No symbol) [0x7ff7dc247ed7]
+	(No symbol) [0x7ff7dc244b5a]
+	(No symbol) [0x7ff7dc1e1462]
+	(No symbol) [0x7ff7dc1e2273]
+	(No symbol) [0x7ff7dc8517b1]
+	(No symbol) [0x7ff7dc8887c7]
+	(No symbol) [0x7ff7dc87c85e]
+	(No symbol) [0x7ff7dc52884e]
+	(No symbol) [0x7ff7dc370415]
+	(No symbol) [0x7ff7dc36bdf4]
+	(No symbol) [0x7ff7dc36bf84]
+	(No symbol) [0x7ff7dc357f7c]
+	(No symbol) [0x7ffca250dda7]
+	(No symbol) [0x7ffca40dee4c]
+ failure_url=https://itpacifique.github.io/mugishapacifique.github.com/assignment/index.html#missing-section
+2026-10-26 20:26:39,002 - INFO - BROWSER_CLOSED browser_session=complete
+2026-10-26 20:26:39,002 - INFO - RUN_SUMMARY total_tests=8 passed=0 failed=8 total_duration=71.400s
